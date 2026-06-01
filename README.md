@@ -104,3 +104,7 @@ Proje, Docker Compose ile başlatılabilir.
 - SQLAlchemy
 - Flask-Login
 - Docker
+
+## Son Notlar
+
+Bu proje, Flask tabanlı bir web uygulaması dönem projesi olarak geliştirilmiştir.
