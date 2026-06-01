@@ -1,0 +1,41 @@
+# Ortam değişkenleri — asla commit'lenmesin
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Sanal ortamlar
+.venv/
+venv/
+env/
+ENV/
+
+# Flask / SQLite veritabanları
+instance/
+*.db
+*.sqlite3
+
+# Flask-Migrate (sadece yerel üretilen dosyalar)
+migrations/
+
+# Dağıtım
+dist/
+build/
+*.egg-info/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Test çıktıları
+.pytest_cache/
+.coverage
+htmlcov/

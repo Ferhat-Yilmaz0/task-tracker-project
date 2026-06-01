@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block title %}Giriş Yap — Task Tracker{% endblock %}
+
+{% block content %}
+<style>
+  .auth-card {
+    max-width: 420px;
+    margin: 3rem auto;
+    background: #1a1d27;
+    border: 1px solid #2d3148;
+    border-radius: 14px;
+    padding: 2.5rem 2rem;
+  }
+  .auth-card h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #818cf8;
+    margin-bottom: 0.25rem;
+  }
+  .auth-card p.subtitle {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-bottom: 1.75rem;
+  }
+  .form-group { margin-bottom: 1.25rem; }
+  .form-group label {
+    display: block;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 0.4rem;
+  }
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    width: 100%;
+    padding: 0.6rem 0.85rem;
+    background: #0f1117;
+    border: 1px solid #2d3148;
+    border-radius: 8px;
+    color: #e2e8f0;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .form-group input:focus { border-color: #6366f1; }
+  .field-errors { margin-top: 0.35rem; }
+  .field-errors span {
+    display: block;
+    font-size: 0.8rem;
+    color: #fca5a5;
+  }
+  .remember-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
+    color: #94a3b8;
+  }
+  .remember-row input[type="checkbox"] { accent-color: #6366f1; width: 15px; height: 15px; }
+  .btn-submit {
+    width: 100%;
+    padding: 0.7rem;
+    background: #6366f1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .btn-submit:hover { background: #4f46e5; }
+  .auth-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    color: #64748b;
+  }
+  .auth-footer a { color: #818cf8; text-decoration: none; }
+  .auth-footer a:hover { text-decoration: underline; }
+</style>
+
+<div class="auth-card">
+  <h1>Giriş Yap</h1>
+  <p class="subtitle">Hesabınıza giriş yapın.</p>
+
+  <form method="POST" action="{{ url_for('auth.login') }}" novalidate>
+    {{ form.hidden_tag() }}
+
+    <div class="form-group">
+      {{ form.email.label }}
+      {{ form.email(placeholder="ornek@eposta.com") }}
+      {% if form.email.errors %}
+        <div class="field-errors">
+          {% for error in form.email.errors %}<span>{{ error }}</span>{% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="form-group">
+      {{ form.password.label }}
+      {{ form.password(placeholder="Şifreniz") }}
+      {% if form.password.errors %}
+        <div class="field-errors">
+          {% for error in form.password.errors %}<span>{{ error }}</span>{% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="remember-row">
+      {{ form.remember_me() }}
+      {{ form.remember_me.label }}
+    </div>
+
+    {{ form.submit(class="btn-submit") }}
+  </form>
+
+  <div class="auth-footer">
+    Hesabınız yok mu?
+    <a href="{{ url_for('auth.register') }}">Kayıt Ol</a>
+  </div>
+</div>
+{% endblock %}
