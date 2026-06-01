@@ -131,3 +131,6 @@ SQLite Database
 Docker Container Environment
 
 Bu yöntem ile uygulama yerel makinede Docker container içerisinde çalıştırılabilir.
+## Demo Video
+
+Demo videosu: [https://youtu.be/OMxue6uIn1A](https://youtu.be/OMxue6uIn1A)
