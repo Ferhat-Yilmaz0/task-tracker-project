@@ -44,3 +44,10 @@ http://127.0.0.1:5000
 - Kayıt: `/auth/register`
 - Giriş: `/auth/login`
 - Görevler: `/tasks/`
+
+
+## Proje Özellikleri
+
+- Kullanıcı Kimlik Doğrulaması
+- Görev Yönetimi
+- Docker Desteği
