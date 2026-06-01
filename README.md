@@ -93,3 +93,14 @@ python run.py
 - /auth/register
 - /auth/login
 - /tasks/
+
+## Docker Konteyneri
+
+Proje, Docker Compose ile başlatılabilir.
+
+## Teknolojiler
+
+- Flask
+- SQLAlchemy
+- Flask-Login
+- Docker
