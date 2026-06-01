@@ -83,3 +83,13 @@ SQLAlchemy
 Şifreler karma değerler kullanılarak saklanır.
 
 Formlar CSRF desteğiyle korunmaktadır.
+
+## Uygulamayı Çalıştırma
+
+python run.py
+
+## Rotalar
+
+- /auth/register
+- /auth/login
+- /tasks/
