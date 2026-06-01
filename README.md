@@ -61,3 +61,19 @@ docker compose up --build
 Python 3.12+
 Flask
 SQLAlchemy
+
+## Kimlik Doğrulama
+
+- Kayıt Ol
+- Giriş Yap
+- Çıkış Yap
+
+## Kullanıcı Akışı
+
+1. Yeni bir hesap kaydedin.
+
+2. Kimlik bilgilerinizle giriş yapın.
+
+3. Görevler sayfasını açın.
+
+4. Görevler oluşturun ve yönetin.
