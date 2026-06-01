@@ -77,3 +77,9 @@ SQLAlchemy
 3. Görevler sayfasını açın.
 
 4. Görevler oluşturun ve yönetin.
+
+## Güvenlik Notları
+
+Şifreler karma değerler kullanılarak saklanır.
+
+Formlar CSRF desteğiyle korunmaktadır.
