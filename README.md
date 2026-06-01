@@ -108,3 +108,26 @@ Proje, Docker Compose ile başlatılabilir.
 ## Son Notlar
 
 Bu proje, Flask tabanlı bir web uygulaması dönem projesi olarak geliştirilmiştir.
+
+Docker ile Çalıştırma
+Gereksinimler
+Docker Desktop
+Docker Compose
+Projeyi Çalıştırma
+Repoyu klonlayın:
+git clone https://github.com/Ferhat-Yilmaz0/task-tracker-project.git
+cd task-tracker-project
+Docker containerlarını oluşturun ve başlatın:
+docker-compose up --build
+Tarayıcıdan uygulamaya erişin:
+http://127.0.0.1:5000
+Containerları Durdurma
+docker-compose down
+Yeniden Oluşturma
+docker-compose up --build
+Kullanılan Servisler
+Flask Web Application
+SQLite Database
+Docker Container Environment
+
+Bu yöntem ile uygulama yerel makinede Docker container içerisinde çalıştırılabilir.
