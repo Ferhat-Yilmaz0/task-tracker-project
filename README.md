@@ -55,3 +55,9 @@ http://127.0.0.1:5000
 ## Docker Kullanımı
 
 docker compose up --build
+
+## Gereksinimler
+
+Python 3.12+
+Flask
+SQLAlchemy
