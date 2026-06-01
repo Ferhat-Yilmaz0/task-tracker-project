@@ -51,3 +51,7 @@ http://127.0.0.1:5000
 - Kullanıcı Kimlik Doğrulaması
 - Görev Yönetimi
 - Docker Desteği
+
+## Docker Kullanımı
+
+docker compose up --build
